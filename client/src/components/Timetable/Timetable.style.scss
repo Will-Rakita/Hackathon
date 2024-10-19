@@ -1,15 +1,16 @@
 @import "../../globals.scss";
 
 .Timetable {
-  font-size: 0.8rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  font-size: 1.0rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
 
   table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
     border-color: black;
+    font-weight: bold;
 
     tr {
       border: solid px #e0e0e0;
