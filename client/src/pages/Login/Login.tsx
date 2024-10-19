@@ -9,7 +9,9 @@ function Login() {
 
   const attemptLogin = async () => {
     try {
-      const message = await login("admin@email.com", "password");
+      var username = (document.getElementById('username') as HTMLInputElement).value;
+      var password = (document.getElementById('password') as HTMLInputElement).value;
+      const message = await login( username , password );
       setMessage(message);
     } catch (error) {
       console.log(error);
@@ -34,8 +36,8 @@ function Login() {
           </div>
           {message && <p>{message}</p>}
           <div className="Login__panel__content__input">
-            <input type="text" placeholder="MyCarletonOne username"></input>
-            <input type="password" placeholder="Password"></input>
+            <input type="text" placeholder="MyCarletonOne username" id="username"></input>
+            <input type="password" placeholder="Password" id="password"></input>
           </div>
           <div className="Login__panel__content__checkbox">
             <input type="checkbox"></input>
