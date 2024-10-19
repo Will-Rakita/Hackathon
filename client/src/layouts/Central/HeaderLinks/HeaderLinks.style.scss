@@ -24,4 +24,11 @@
   a:active {
     color: $theme--dark;
   }
+
+  a {
+  @media(prefers-color-scheme: dark) {
+    background: black;
+    color: white;
+  }
+}
 }

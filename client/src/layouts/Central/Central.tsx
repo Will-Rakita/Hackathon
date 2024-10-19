@@ -13,18 +13,20 @@ interface Props {
 function Central({ title, children }: Props) {
   return (
     <Base>
+    <div class='menu-theme'>
       <Banner />
-      <div className="Central__page">
-        <HeaderLinks />
-        <Navigation />
-        <h2 className="Central__page__title">{title}</h2>
-        <Divider />
-        <div className="Central__page__content">{children}</div>
-        <Divider />
-        <div className="Central__page__footer">
-          <div className="Central__page__footer__release">Release: 8.10.1</div>
-          <div className="Central__page__footer__copyright">
-            © 2024 Ellucian Company L.P. and its affiliates.
+        <div className="Central__page">
+          <HeaderLinks />
+          <Navigation />
+          <h2 className="Central__page__title">{title}</h2>
+          <Divider />
+          <div className="Central__page__content">{children}</div>
+          <Divider />
+          <div className="Central__page__footer">
+            <div className="Central__page__footer__release">Release: 8.10.1</div>
+            <div className="Central__page__footer__copyright">
+              © 2024 Ellucian Company L.P. and its affiliates.
+            </div>
           </div>
         </div>
       </div>
