@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 function Menu() {
   return (
+    <div class='menu-theme'>
     <Layout title={"Main Menu"}>
       <br />
       <CabinetSection
@@ -130,6 +131,7 @@ function Menu() {
         ]}
       />
     </Layout>
+    </div>
   );
 }
 
