@@ -42,7 +42,7 @@ function Timetable({ events }: TimetableProps) {
           </tr>
         </thead>
         <tbody>
-          {Array.from({ length: 22 }, (_, i) => {
+          {Array.from({ length: 26 }, (_, i) => {
             const hour = 8 + Math.floor(i / 2);
             const minute = i % 2 === 0 ? "00" : "30";
             const timeLabel = `${hour}:${minute}`;
