@@ -4,6 +4,10 @@ body {
   font-weight: normal;
   font-family: "Segoe UI", "Segoe", "SegoeUI-Regular-final", Tahoma, Helvetica,
     Arial, sans-serif;
+    @media(prefers-color-scheme: dark) {
+      background: black;
+      color: white;
+    }
 }
 
 $theme: #e91c24;

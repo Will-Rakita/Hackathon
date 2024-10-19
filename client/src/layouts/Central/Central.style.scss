@@ -20,7 +20,7 @@
     &__footer {
       font-weight: bold;
       font-size: 80%;
-      text-align: left;
+      text-align: center;
 
       &__release {
         text-transform: uppercase;
@@ -28,6 +28,10 @@
 
       &__copyright {
         margin-top: 1.67rem;
+      }
+      @media(prefers-color-scheme: dark) {
+        background: black;
+        color: white;
       }
     }
   }
